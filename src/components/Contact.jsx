@@ -20,11 +20,6 @@ const Contact = () => {
             displayLink: 'sakshamxt'
         },
         {
-            label: 'Instagram',
-            link: 'https://instagram.com/tyagiisaksham',
-            displayLink: 'tyagiisaksham'
-        },
-        {
             label: 'Twitter',
             link: 'https://twitter.com/tyagiisaksham',
             displayLink: 'tyagiisaksham'
