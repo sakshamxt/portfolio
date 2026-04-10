@@ -1,0 +1,40 @@
+{
+  "personal": {
+    "name": "Saksham Tyagi",
+    "tagline": "Full-Stack Developer",
+    "about": "I build scalable web applications and explore Generative AI, focusing on creating minimal, high-impact digital experiences that solve real-world problems."
+  },
+  "links": [
+    { "name": "GitHub", "url": "https://github.com/sakshamxt", "icon": "github" },
+    { "name": "LinkedIn", "url": "https://linkedin.com/tyagiisaksham", "icon": "linkedin" },
+    { "name": "Email", "url": "mailto:saksham47t@gmail.com", "icon": "mail" }
+  ],
+  "skills": [
+    { "name": "React", "icon": "code" },
+    { "name": "Node.js", "icon": "server" },
+    { "name": "MongoDB", "icon": "database" },
+    { "name": "Python", "icon": "terminal" },
+    { "name": "Gen AI", "icon": "sparkles" },
+    { "name": "Tailwind v4", "icon": "globe" }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "DirektData AI",
+      "description": "SQL generation SaaS allowing business managers to query databases via natural language.",
+      "techStack": ["React", "Python", "LangChain", "PostgreSQL"],
+      "imageUrl": "/projects/direktdata.png", 
+      "liveLink": "#",
+      "caseStudy": "Architected a complex system translating natural language to SQL, reducing query times for non-technical staff by 80%."
+    },
+    {
+      "id": 2,
+      "title": "Nine Block Studio",
+      "description": "E-commerce platform for a premium online thrift store brand featuring timed drops.",
+      "techStack": ["React", "Node.js", "MongoDB", "Tailwind"],
+      "imageUrl": "/projects/nineblock.png",
+      "liveLink": "#",
+      "caseStudy": "Built a high-performance inventory system handling high-traffic timed drops, ensuring zero overselling during peaks."
+    }
+  ]
+}

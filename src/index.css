@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-base: #030303;
+  --color-bg-surface: #0f0f11;
+  --color-border: #1f1f22;
+  --color-text-main: #f8f8f8;
+  --color-text-muted: #8b8b93;
+  --color-accent: #38bdf8; /* Electric Sky */
+  
+  --shadow-tactile: inset 0 1px 1px 0 rgba(255, 255, 255, 0.05), 0 4px 24px -4px rgba(0, 0, 0, 0.8);
+  --shadow-glow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.15), 0 0 20px 0 rgba(56, 189, 248, 0.2);
+}
+
+:root {
+  background-color: var(--color-bg-base);
+  color: var(--color-text-main);
+  color-scheme: dark;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
