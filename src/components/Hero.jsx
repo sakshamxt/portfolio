@@ -14,7 +14,8 @@ export default function Hero() {
           className="flex items-center gap-4 mb-10 md:mb-16"
         >
           <div className="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden border border-[var(--color-brand-border)] shrink-0">
-            <img src="https://res.cloudinary.com/dcym7htqt/image/upload/q_auto/f_auto/v1776197395/pic_portfolio_i1kw5c.webp" alt={personal.name} className="w-full h-full object-cover" />
+            <img src="https://res.cloudinary.com/dcym7htqt/image/upload/q_auto/f_auto/v1776197395/pic_portfolio_i1kw5c.webp" alt={personal.name} className="w-full h-full object-cover select-none" onContextMenu={(e) => e.preventDefault()}
+              style={{ WebkitTouchCallout: 'none' }} />
           </div>
           <div>
             <h2 className="text-xs md:text-sm font-bold uppercase tracking-widest">{personal.name}</h2>
