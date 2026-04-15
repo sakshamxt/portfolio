@@ -1,40 +1,72 @@
 {
   "personal": {
     "name": "Saksham Tyagi",
-    "tagline": "Full-Stack Developer",
-    "about": "I build scalable web applications and explore Generative AI, focusing on creating minimal, high-impact digital experiences that solve real-world problems."
+    "role": "Software Engineer",
+    "location": "Based in India",
+    "headline": "I build software that solves real business problems.",
+    "subtext": "I focus on fast, reliable web applications and AI tools that save time and make work easier."
   },
   "links": [
     { "name": "GitHub", "url": "https://github.com/sakshamxt", "icon": "github" },
-    { "name": "LinkedIn", "url": "https://linkedin.com/tyagiisaksham", "icon": "linkedin" },
-    { "name": "Email", "url": "mailto:saksham47t@gmail.com", "icon": "mail" }
+    { "name": "LinkedIn", "url": "https://linkedin.com/in/tyagiisaksham", "icon": "linkedin" },
+    { "name": "Email", "url": "mailto:contact@sakshamtyagi.me", "icon": "mail" }
   ],
-  "skills": [
-    { "name": "React", "icon": "code" },
-    { "name": "Node.js", "icon": "server" },
-    { "name": "MongoDB", "icon": "database" },
-    { "name": "Python", "icon": "terminal" },
-    { "name": "Gen AI", "icon": "sparkles" },
-    { "name": "Tailwind v4", "icon": "globe" }
+  "toolkit": [
+    "React.js", "Node.js", "Next.js", "Databases (SQL & NoSQL)", "Python", "AI Integration", "Web Architecture"
   ],
   "projects": [
     {
       "id": 1,
-      "title": "DirektData AI",
-      "description": "SQL generation SaaS allowing business managers to query databases via natural language.",
-      "techStack": ["React", "Python", "LangChain", "PostgreSQL"],
-      "imageUrl": "/projects/direktdata.png", 
-      "liveLink": "#",
-      "caseStudy": "Architected a complex system translating natural language to SQL, reducing query times for non-technical staff by 80%."
+      "title": "Cafiva",
+      "type": "E-Commerce Platform",
+      "imageUrl": "https://res.cloudinary.com/dcym7htqt/image/upload/q_auto/f_auto/v1776198476/Screenshot_2026-04-15_014904_jn1fkq.png", 
+      "liveLink": "https://cafiva.in",
+      "techStack": ["Next.js", "MongoDB", "Tailwind CSS"],
+      "story": {
+        "problem": "We launched a premium artisanal coffee brand and needed a digital storefront that felt as high-quality as our product, while flawlessly handling traffic and orders.",
+        "approach": "As the technical co-founder, I built the entire online infrastructure from scratch. I focused on a lightning-fast checkout experience and automated our backend order processing.",
+        "solution": "A beautiful, high-performing storefront that runs completely on autopilot, handling all the technical heavy-lifting so the team can focus entirely on business growth."
+      }
+    },
+      {
+      "id": 2,
+      "title": "KraftyTales",
+      "type": "E-Commerce Showroom",
+      "imageUrl": "https://res.cloudinary.com/dcym7htqt/image/upload/q_auto/f_auto/v1776258469/1411537f-c94a-4459-8bcc-b8a63dc2c562.png",
+      "liveLink": "https://kraftytales.in",
+      "techStack": ["React", "Tailwind CSS"],
+      "story": {
+        "problem": "A bespoke artisanal gifting brand catering to elite corporate clients (like Lamborghini and Facebook) needed a digital presence that matched the physical luxury of their products, rather than relying on a rigid, generic e-commerce template.",
+        "approach": "I completely re-architected the frontend into a bespoke digital showroom. Utilizing a 'quiet luxury' design system, I implemented asymmetrical editorial layouts, sophisticated typography, and silky, physics-based micro-interactions.",
+        "solution": "A breathtaking, magazine-like digital storefront that elevates the brand identity, featuring an immersive shopping flow for retail customers and a high-fashion portfolio gallery for B2B corporate pitching."
+      }
+    },
+    {
+      "id": 3,
+      "title": "Nine Block Studio",
+      "type": "E-Commerce Platform",
+      "imageUrl": "https://res.cloudinary.com/dcym7htqt/image/upload/q_auto/f_auto/v1776198858/Screenshot_2026-04-15_020340_kx8ico.png",
+      "liveLink": "https://nineblock.studio",
+      "techStack": ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+      "story": {
+        "problem": "A premium thrift brand needed a store that could handle massive spikes in traffic during limited-time sales without crashing or overselling items.",
+        "approach": "I built a custom shopping platform from scratch, focusing on speed, reliable inventory tracking, and a premium user experience.",
+        "solution": "A fast, beautifully designed storefront that successfully handled launch-day traffic without a single crash or checkout error."
+      }
+    }
+  ],
+  "endorsements": [
+    {
+      "id": 1,
+      "quote": "Having Saksham run the technical infrastructure is a game-changer. The storefront just works, even during traffic spikes, and looks incredibly premium.",
+      "author": "Lakshay",
+      "company": "Co-Founder, Cafiva"
     },
     {
       "id": 2,
-      "title": "Nine Block Studio",
-      "description": "E-commerce platform for a premium online thrift store brand featuring timed drops.",
-      "techStack": ["React", "Node.js", "MongoDB", "Tailwind"],
-      "imageUrl": "/projects/nineblock.png",
-      "liveLink": "#",
-      "caseStudy": "Built a high-performance inventory system handling high-traffic timed drops, ensuring zero overselling during peaks."
+      "quote": "From our first meeting to the final launch, collaborating with Saksham was a great experience. The end result is a premium site that perfectly captures our brand identity.",
+      "author": "Sneha",
+      "company": "Founder, KraftyTales"
     }
   ]
 }

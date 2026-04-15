@@ -1,29 +1,31 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg-base: #030303;
-  --color-bg-surface: #0f0f11;
-  --color-border: #1f1f22;
-  --color-text-main: #f8f8f8;
-  --color-text-muted: #8b8b93;
-  --color-accent: #38bdf8; /* Electric Sky */
-  
-  --shadow-tactile: inset 0 1px 1px 0 rgba(255, 255, 255, 0.05), 0 4px 24px -4px rgba(0, 0, 0, 0.8);
-  --shadow-glow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.15), 0 0 20px 0 rgba(56, 189, 248, 0.2);
+  --color-brand-bg: #F4F4F0; /* Warm Oat / Paper */
+  --color-brand-text: #111111; /* Stark Off-Black */
+  --color-brand-muted: #666666; /* Deep Gray */
+  --color-brand-accent: #FF4500; /* Vibrant Vermilion */
+  --color-brand-border: #D1D1CD;
 }
 
 :root {
-  background-color: var(--color-bg-base);
-  color: var(--color-text-main);
-  color-scheme: dark;
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+  color-scheme: light;
 }
 
 body {
-  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-family: 'Helvetica Neue', ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
-::-webkit-scrollbar {
-  display: none;
+::selection {
+  background-color: var(--color-brand-accent);
+  color: #fff;
+}
+
+/* Crisp utility for borders */
+.border-b-crisp {
+  border-bottom: 1.5px solid var(--color-brand-text);
 }

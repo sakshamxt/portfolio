@@ -4,67 +4,53 @@ import { getIcon } from '../utils/IconMap';
 
 export default function Hero() {
   const { personal, links } = data;
-  const spring = { type: "spring", stiffness: 70, damping: 20, mass: 1.2 };
 
   return (
-    <motion.section 
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={spring}
-      className="relative min-h-[85vh] flex flex-col justify-center pt-20 pb-24"
-    >
-      {/* Subtle Dot Grid Background Pattern */}
-      <div 
-        className="absolute inset-0 z-0 opacity-20 pointer-events-none" 
-        style={{ 
-          backgroundImage: 'radial-gradient(circle at 2px 2px, var(--color-border) 2px, transparent 0)', 
-          backgroundSize: '32px 32px',
-          maskImage: 'linear-gradient(to bottom, black 40%, transparent 100%)',
-          WebkitMaskImage: 'linear-gradient(to bottom, black 40%, transparent 100%)'
-        }}
-      ></div>
+    <section className="min-h-[80vh] flex flex-col justify-center relative py-12 md:py-20">
+      <div className="max-w-5xl">
+        
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
+          className="flex items-center gap-4 mb-10 md:mb-16"
+        >
+          <div className="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden border border-[var(--color-brand-border)] shrink-0">
+            <img src="https://res.cloudinary.com/dcym7htqt/image/upload/q_auto/f_auto/v1776197395/pic_portfolio_i1kw5c.webp" alt={personal.name} className="w-full h-full object-cover" />
+          </div>
+          <div>
+            <h2 className="text-xs md:text-sm font-bold uppercase tracking-widest">{personal.name}</h2>
+            <p className="text-[var(--color-brand-muted)] text-xs md:text-sm font-medium">{personal.role}</p>
+          </div>
+        </motion.div>
 
-      <div className="relative z-10">
-        <div className="flex flex-col md:flex-row md:items-end gap-8 mb-10">
-          <motion.div 
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ ...spring, delay: 0.2 }}
-            className="w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden shadow-tactile bg-[var(--color-bg-surface)] shrink-0 border border-[var(--color-border)]"
-          >
-            <img src="/photo.jpg" alt={personal.name} className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700" />
-          </motion.div>
-          
-          <div className="flex gap-3 pb-2">
-            {links.map((link, i) => (
-              <motion.a 
+        <motion.h1 
+          initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1 }}
+          className="text-5xl md:text-6xl lg:text-[7rem] font-black tracking-tighter leading-[1] md:leading-[0.95] mb-8"
+        >
+          {personal.headline}
+        </motion.h1>
+
+        <motion.div 
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.4 }}
+          className="flex flex-col md:flex-row md:items-center gap-6 md:gap-8 justify-between border-t border-[var(--color-brand-border)] pt-8 mt-8 md:mt-12"
+        >
+          <p className="text-lg md:text-xl text-[var(--color-brand-muted)] font-medium max-w-lg">
+            {personal.subtext}
+          </p>
+
+          {/* flex-wrap ensures links don't break the layout on tiny mobile screens */}
+          <div className="flex flex-wrap gap-4 md:gap-6 items-center shrink-0">
+            {links.map((link) => (
+              <a 
                 key={link.name} href={link.url} target="_blank" rel="noopener noreferrer"
-                initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ ...spring, delay: 0.3 + (i * 0.1) }}
-                className="w-12 h-12 flex items-center justify-center bg-[var(--color-bg-surface)] border border-[var(--color-border)] shadow-tactile rounded-full hover:shadow-glow hover:border-[var(--color-accent)]/50 hover:-translate-y-1 transition-all duration-300 group"
-                aria-label={link.name}
+                className="flex items-center gap-2 text-xs md:text-sm font-bold uppercase tracking-widest border-b-2 border-transparent hover:border-[var(--color-brand-accent)] hover:text-[var(--color-brand-accent)] transition-all pb-1"
               >
-                {getIcon(link.icon, { size: 20, className: "text-[var(--color-text-muted)] group-hover:text-[var(--color-accent)] transition-colors" })}
-              </motion.a>
+                {getIcon(link.icon, { size: 16 })} {link.name}
+              </a>
             ))}
           </div>
-        </div>
+        </motion.div>
         
-        <motion.h1 
-          initial={{ opacity: 0, filter: "blur(10px)" }}
-          animate={{ opacity: 1, filter: "blur(0px)" }}
-          transition={{ duration: 1, delay: 0.1 }}
-          className="text-6xl md:text-[7.5rem] font-extrabold tracking-tighter mb-6 leading-[0.9] text-[var(--color-text-main)]"
-        >
-          {personal.name}<span className="text-[var(--color-accent)]">.</span>
-        </motion.h1>
-        
-        <motion.p 
-          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.4 }}
-          className="text-xl md:text-3xl text-[var(--color-text-muted)] font-medium tracking-tight max-w-2xl leading-snug"
-        >
-          {personal.tagline}
-        </motion.p>
       </div>
-    </motion.section>
+    </section>
   );
 }
