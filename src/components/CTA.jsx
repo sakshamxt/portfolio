@@ -54,7 +54,7 @@ export default function CTA() {
               LET'S <br/> TALK.
             </h2>
             <p className="text-lg md:text-xl font-medium max-w-md opacity-90 leading-relaxed">
-              I am currently open for new roles and select freelance projects. Drop your details below, and I will reach out to you shortly.
+              I am currently open for freelance projects. Drop your details below, and I will reach out to you shortly.
             </p>
           </div>
 
