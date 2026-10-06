@@ -21,7 +21,7 @@ export default function App() {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     setFormStatus('submitting');
-    
+
     try {
       // We are using Web3Forms to send the email directly to you without needing a backend server.
       // You will need to get a free access key from https://web3forms.com/ using your email.
@@ -32,19 +32,19 @@ export default function App() {
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          access_key: 'YOUR_WEB3FORMS_ACCESS_KEY', // Replace this with your Web3Forms access key
+          access_key: 'b0a6e894-0ad0-46b9-ae4b-734f5bc50c2e',
           name: formData.name,
           email: formData.email,
           message: formData.message,
           subject: 'New Contact Form Submission from Portfolio'
         })
       });
-      
+
       const result = await response.json();
       if (result.success) {
         setFormStatus('success');
         setFormData({ name: '', email: '', message: '' });
-        
+
         // Reset success message after 5 seconds
         setTimeout(() => setFormStatus('idle'), 5000);
       } else {
@@ -252,7 +252,7 @@ export default function App() {
               <div className="absolute top-0 right-0 w-64 h-64 bg-[#FF5A00]/10 rounded-full blur-[80px] pointer-events-none"></div>
 
               {formStatus === 'success' ? (
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
                   className="flex flex-col items-center justify-center text-center py-12 relative z-10"
                 >
@@ -266,41 +266,41 @@ export default function App() {
                 <>
                   <div className="flex flex-col gap-2 md:gap-3 relative z-10">
                     <label htmlFor="name" className="text-xs md:text-sm font-semibold text-[#A1A1A6] tracking-wide">Name</label>
-                    <input 
-                      type="text" 
-                      id="name" 
+                    <input
+                      type="text"
+                      id="name"
                       value={formData.name}
-                      onChange={(e) => setFormData({...formData, name: e.target.value})}
-                      className="bg-black/20 border border-white/10 rounded-xl md:rounded-2xl px-4 md:px-5 py-3 md:py-4 text-white focus:outline-none focus:border-[#FF5A00] transition-colors font-medium text-sm md:text-base" 
-                      placeholder="Jane Doe" 
-                      required 
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      className="bg-black/20 border border-white/10 rounded-xl md:rounded-2xl px-4 md:px-5 py-3 md:py-4 text-white focus:outline-none focus:border-[#FF5A00] transition-colors font-medium text-sm md:text-base"
+                      placeholder="Jane Doe"
+                      required
                       disabled={formStatus === 'submitting'}
                     />
                   </div>
 
                   <div className="flex flex-col gap-2 md:gap-3 relative z-10">
                     <label htmlFor="email" className="text-xs md:text-sm font-semibold text-[#A1A1A6] tracking-wide">Email</label>
-                    <input 
-                      type="email" 
-                      id="email" 
+                    <input
+                      type="email"
+                      id="email"
                       value={formData.email}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      className="bg-black/20 border border-white/10 rounded-xl md:rounded-2xl px-4 md:px-5 py-3 md:py-4 text-white focus:outline-none focus:border-[#FF5A00] transition-colors font-medium text-sm md:text-base" 
-                      placeholder="jane@example.com" 
-                      required 
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      className="bg-black/20 border border-white/10 rounded-xl md:rounded-2xl px-4 md:px-5 py-3 md:py-4 text-white focus:outline-none focus:border-[#FF5A00] transition-colors font-medium text-sm md:text-base"
+                      placeholder="jane@example.com"
+                      required
                       disabled={formStatus === 'submitting'}
                     />
                   </div>
 
                   <div className="flex flex-col gap-2 md:gap-3 relative z-10">
                     <label htmlFor="message" className="text-xs md:text-sm font-semibold text-[#A1A1A6] tracking-wide">Message</label>
-                    <textarea 
-                      id="message" 
-                      rows="5" 
+                    <textarea
+                      id="message"
+                      rows="5"
                       value={formData.message}
-                      onChange={(e) => setFormData({...formData, message: e.target.value})}
-                      className="bg-black/20 border border-white/10 rounded-xl md:rounded-2xl px-4 md:px-5 py-3 md:py-4 text-white focus:outline-none focus:border-[#FF5A00] transition-colors font-medium resize-none text-sm md:text-base" 
-                      placeholder="Tell me about your project..." 
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      className="bg-black/20 border border-white/10 rounded-xl md:rounded-2xl px-4 md:px-5 py-3 md:py-4 text-white focus:outline-none focus:border-[#FF5A00] transition-colors font-medium resize-none text-sm md:text-base"
+                      placeholder="Tell me about your project..."
                       required
                       disabled={formStatus === 'submitting'}
                     ></textarea>
@@ -310,8 +310,8 @@ export default function App() {
                     <p className="text-red-500 text-sm mt-2 relative z-10">Something went wrong. Please try again or email me directly.</p>
                   )}
 
-                  <button 
-                    type="submit" 
+                  <button
+                    type="submit"
                     disabled={formStatus === 'submitting'}
                     className={`bg-[#FF5A00] text-white font-bold text-base md:text-lg py-4 md:py-5 rounded-xl md:rounded-2xl hover:bg-[#E04F00] hover:scale-[1.02] transition-all duration-300 mt-2 md:mt-4 shadow-[0_0_20px_rgba(255,90,0,0.3)] relative z-10 ${formStatus === 'submitting' ? 'opacity-70 cursor-not-allowed' : ''}`}
                   >
