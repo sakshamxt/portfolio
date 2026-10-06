@@ -1,57 +1,121 @@
 {
   "personal": {
     "name": "Saksham Tyagi",
-    "role": "Software Engineer",
+    "role": "Software Developer",
     "location": "Based in India",
     "headline": "I build web apps and AI tools for growing businesses.",
     "subtext": "I focus on fast, reliable web applications and AI tools that save time and make work easier."
   },
   "links": [
-    { "name": "GitHub", "url": "https://github.com/sakshamxt", "icon": "github" },
-    { "name": "LinkedIn", "url": "https://linkedin.com/in/tyagiisaksham", "icon": "linkedin" },
-    { "name": "Email", "url": "mailto:contact@sakshamtyagi.me", "icon": "mail" }
+    {
+      "name": "GitHub",
+      "url": "https://github.com/sakshamxt",
+      "icon": "github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/tyagiisaksham",
+      "icon": "linkedin"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:hello@tyagisaksham.in",
+      "icon": "mail"
+    }
   ],
   "toolkit": [
-    "React.js", "Node.js", "Next.js", "Databases (SQL & NoSQL)", "Python", "AI Integration", "Web Architecture"
+    "React.js",
+    "Node.js",
+    "Next.js",
+    "Databases (SQL & NoSQL)",
+    "Python",
+    "AI Integration",
+    "Web Architecture"
+  ],
+  "services": [
+    {
+      "id": 1,
+      "title": "MVP in 4 Weeks",
+      "description": "Stop waiting months to test your idea. I'll build and launch a fully functional Minimum Viable Product so you can start acquiring users and validating your market fast.",
+      "deliverables": [
+        "Full-Stack App",
+        "Database Architecture",
+        "User Authentication",
+        "Deployment Setup"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "E-Commerce Optimization",
+      "description": "Generic templates hurt conversion. I build bespoke, high-performance storefronts that can handle massive traffic spikes and provide a luxury shopping experience.",
+      "deliverables": [
+        "Custom Frontend",
+        "Headless Commerce",
+        "Performance Tuning",
+        "Automated Workflows"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "AI & Workflow Automation",
+      "description": "Save hundreds of hours by automating repetitive tasks. I integrate AI models and connect your internal tools to work seamlessly together on autopilot.",
+      "deliverables": [
+        "AI Integrations",
+        "Custom Internal Tools",
+        "API Development",
+        "Workflow Automation"
+      ]
+    }
   ],
   "projects": [
     {
       "id": 1,
-      "title": "Cafiva",
-      "type": "E-Commerce Platform",
-      "imageUrl": "https://res.cloudinary.com/dcym7htqt/image/upload/q_auto/f_auto/v1776198476/Screenshot_2026-04-15_014904_jn1fkq.png", 
-      "liveLink": "https://cafiva.in",
-      "techStack": ["Next.js", "MongoDB", "Tailwind CSS"],
+      "title": "La Joie",
+      "type": "Online Ordering Platform",
+      "imageUrl": "/1.png",
+      "liveLink": "https://lajoiebakery.in",
+      "techStack": [
+        "Next.js",
+        "MongoDB",
+        "Tailwind CSS"
+      ],
       "story": {
-        "problem": "We launched a premium artisanal coffee brand and needed a digital storefront that felt as high-quality as our product, while flawlessly handling traffic and orders.",
-        "approach": "As the technical co-founder, I built the entire online infrastructure from scratch. I focused on a lightning-fast checkout experience and automated our backend order processing.",
-        "solution": "A beautiful, high-performing storefront that runs completely on autopilot, handling all the technical heavy-lifting so the team can focus entirely on business growth."
+        "problem": "La Joie needed a digital ordering experience that could keep up with a fast-moving food truck bakery — making it effortless for customers to order while simplifying operations behind the scenes.",
+        "approach": "I designed and developed the entire platform from scratch, pairing a conversion-focused storefront with a custom admin panel for managing products, orders, and day-to-day operations. I also built an analytics dashboard to turn sales data into actionable insights.",
+        "solution": "A complete digital ecosystem that handles the full ordering journey — from discovering the menu and placing an order to managing operations and tracking business performance."
       }
     },
-      {
+    {
       "id": 2,
-      "title": "KraftyTales",
-      "type": "E-Commerce Showroom",
-      "imageUrl": "https://res.cloudinary.com/dcym7htqt/image/upload/q_auto/f_auto/v1776258469/1411537f-c94a-4459-8bcc-b8a63dc2c562.png",
-      "liveLink": "https://kraftytales.in",
-      "techStack": ["React", "Tailwind CSS"],
+      "title": "Vogue Bakes",
+      "type": "Bakery E-Commerce Platform",
+      "imageUrl": "/2.png",
+      "liveLink": "https://voguebakes.in",
+      "techStack": [
+        "Next.js",
+        "MongoDB",
+        "Tailwind CSS"
+      ],
       "story": {
-        "problem": "A bespoke artisanal gifting brand catering to elite corporate clients (like Lamborghini and Facebook) needed a digital presence that matched the physical luxury of their products, rather than relying on a rigid, generic e-commerce template.",
-        "approach": "I completely re-architected the frontend into a bespoke digital showroom. Utilizing a 'quiet luxury' design system, I implemented asymmetrical editorial layouts, sophisticated typography, and silky, physics-based micro-interactions.",
-        "solution": "A breathtaking, magazine-like digital storefront that elevates the brand identity, featuring an immersive shopping flow for retail customers and a high-fashion portfolio gallery for B2B corporate pitching."
+        "problem": "Vogue Bakes needed a polished online presence where customers could easily explore its products, customize their orders, and place bakery orders without relying on manual ordering through social media or messages.",
+        "approach": "I built the complete storefront from scratch, focusing on a premium product browsing experience, streamlined ordering flow, and a responsive interface that works seamlessly across devices.",
+        "solution": "A modern bakery e-commerce platform that brings the entire ordering experience online, making it easier for customers to discover products and place orders while giving the business a scalable digital storefront."
       }
     },
     {
       "id": 3,
-      "title": "Nine Block Studio",
-      "type": "E-Commerce Platform",
-      "imageUrl": "https://res.cloudinary.com/dcym7htqt/image/upload/q_auto/f_auto/v1776198858/Screenshot_2026-04-15_020340_kx8ico.png",
-      "liveLink": "https://nineblock.studio",
-      "techStack": ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+      "title": "KraftyTales",
+      "type": "Gifting Catalog Platform",
+      "imageUrl": "/3.png",
+      "liveLink": "https://kraftytales.in",
+      "techStack": [
+        "React.js",
+        "Tailwind CSS"
+      ],
       "story": {
-        "problem": "A premium thrift brand needed a store that could handle massive spikes in traffic during limited-time sales without crashing or overselling items.",
-        "approach": "I built a custom shopping platform from scratch, focusing on speed, reliable inventory tracking, and a premium user experience.",
-        "solution": "A fast, beautifully designed storefront that successfully handled launch-day traffic without a single crash or checkout error."
+        "problem": "KraftyTales needed a simple yet premium way to showcase its curated gifting collection online while turning product interest into direct customer enquiries.",
+        "approach": "I built a visually focused product catalog from scratch, designed to make browsing effortless and integrated each product with a direct WhatsApp enquiry flow, removing unnecessary friction between discovery and conversation.",
+        "solution": "A lightweight digital catalog that showcases products beautifully and converts browsing into direct WhatsApp enquiries, giving the brand a simple and effective way to generate orders online."
       }
     }
   ],
